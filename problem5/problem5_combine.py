@@ -2,9 +2,9 @@ import numpy as np
 from problem4.problem4_addition import add_and_plot
 
 def combine_data():
-    old_data, new_data = add_and_plot()
-    combined = np.vstack((old_data, new_data))
-    print("Shape of combined data:", combined.shape)
+    data1, data2 = add_and_plot()
+    combined = np.vstack((data1, data2))
+    print("Combined data shape:", combined.shape)
     return combined
 
 if __name__ == "__main__":
